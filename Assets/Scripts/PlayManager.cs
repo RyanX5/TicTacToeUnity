@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayManager : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    int moveNumber = 1;
     void Start()
     {
         
@@ -20,5 +22,22 @@ public class PlayManager : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void GridClick(int moveNumber)
+    {
+        if(moveNumber % 2 == 1)
+        {
+            spawnCircle();
+        }
+        else
+        {
+            spawnCross();
+        }
+    }
+
+    private void MoveCounter()
+    {
+
     }
 }
