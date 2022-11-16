@@ -49,7 +49,7 @@ public class PlayManager : MonoBehaviour
 
     void spawnCircle()
     {
-        GameObject.Instantiate(circle, , Quaternion.identity);
+        GameObject.Instantiate(circle, transform.position, Quaternion.identity);
     }
 
     void spawnCross()
