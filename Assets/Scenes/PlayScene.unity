@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 30492437}
   - component: {fileID: 30492436}
   - component: {fileID: 30492435}
+  - component: {fileID: 30492438}
   m_Layer: 5
   m_Name: GridButton
   m_TagString: Untagged
@@ -181,7 +182,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -205,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 30492436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &30492436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -256,6 +245,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30492433}
   m_CullTransparentMesh: 1
+--- !u!114 &30492438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30492433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &105517778
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377287ab299b34a95a3c6b02e9a254f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circle: {fileID: 6521105004271601763, guid: 7692cdc5d240d409db01b59a23f372a9, type: 3}
-  cross: {fileID: 7502040329324163822, guid: baea648e162b34d25858e65a85e8271f, type: 3}
+  moveCount: 1
 --- !u!4 &195891978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6207402298394157846, guid: 6f3aef810164a491f8c85d31c85dcbb2, type: 3}
@@ -319,6 +322,7 @@ GameObject:
   - component: {fileID: 382716748}
   - component: {fileID: 382716747}
   - component: {fileID: 382716746}
+  - component: {fileID: 382716749}
   m_Layer: 5
   m_Name: GridButton (3)
   m_TagString: Untagged
@@ -365,7 +369,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -389,19 +393,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 382716747}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &382716747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -440,6 +432,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382716744}
   m_CullTransparentMesh: 1
+--- !u!114 &382716749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382716744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &415441341
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +526,7 @@ GameObject:
   - component: {fileID: 453917903}
   - component: {fileID: 453917902}
   - component: {fileID: 453917901}
+  - component: {fileID: 453917904}
   m_Layer: 5
   m_Name: GridButton (4)
   m_TagString: Untagged
@@ -565,7 +573,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -589,19 +597,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 453917902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &453917902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -640,6 +636,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453917899}
   m_CullTransparentMesh: 1
+--- !u!114 &453917904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453917899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &550046645
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +881,7 @@ GameObject:
   - component: {fileID: 645720493}
   - component: {fileID: 645720492}
   - component: {fileID: 645720491}
+  - component: {fileID: 645720494}
   m_Layer: 5
   m_Name: GridButton (6)
   m_TagString: Untagged
@@ -916,7 +928,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -940,19 +952,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 645720492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &645720492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -991,6 +991,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645720489}
   m_CullTransparentMesh: 1
+--- !u!114 &645720494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645720489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1001 &903985083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1284,6 +1299,7 @@ GameObject:
   - component: {fileID: 1264336988}
   - component: {fileID: 1264336987}
   - component: {fileID: 1264336986}
+  - component: {fileID: 1264336989}
   m_Layer: 5
   m_Name: GridButton (1)
   m_TagString: Untagged
@@ -1330,7 +1346,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1354,19 +1370,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1264336987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1264336987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1405,6 +1409,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264336984}
   m_CullTransparentMesh: 1
+--- !u!114 &1264336989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264336984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &1295213629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1547,7 @@ GameObject:
   - component: {fileID: 1427717342}
   - component: {fileID: 1427717341}
   - component: {fileID: 1427717340}
+  - component: {fileID: 1427717343}
   m_Layer: 5
   m_Name: GridButton (5)
   m_TagString: Untagged
@@ -1574,7 +1594,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1598,19 +1618,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1427717341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1427717341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,7 +1632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1649,6 +1657,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427717338}
   m_CullTransparentMesh: 1
+--- !u!114 &1427717343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427717338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &1472158105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1684,7 @@ GameObject:
   - component: {fileID: 1472158109}
   - component: {fileID: 1472158108}
   - component: {fileID: 1472158107}
+  - component: {fileID: 1472158110}
   m_Layer: 5
   m_Name: GridButton (2)
   m_TagString: Untagged
@@ -1707,7 +1731,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1731,19 +1755,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1472158108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1472158108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,7 +1769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1782,6 +1794,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472158105}
   m_CullTransparentMesh: 1
+--- !u!114 &1472158110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472158105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &1519053018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1821,7 @@ GameObject:
   - component: {fileID: 1519053022}
   - component: {fileID: 1519053021}
   - component: {fileID: 1519053020}
+  - component: {fileID: 1519053023}
   m_Layer: 5
   m_Name: GridButton (7)
   m_TagString: Untagged
@@ -1840,7 +1868,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1864,19 +1892,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1519053021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1519053021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,7 +1906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1915,6 +1931,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519053018}
   m_CullTransparentMesh: 1
+--- !u!114 &1519053023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519053018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &1552042865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +1958,7 @@ GameObject:
   - component: {fileID: 1552042869}
   - component: {fileID: 1552042868}
   - component: {fileID: 1552042867}
+  - component: {fileID: 1552042870}
   m_Layer: 5
   m_Name: GridButton (8)
   m_TagString: Untagged
@@ -1973,7 +2005,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1997,19 +2029,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1552042868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 105517780}
-        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
-        m_MethodName: GridClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1552042868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2023,7 +2043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2048,6 +2068,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552042865}
   m_CullTransparentMesh: 1
+--- !u!114 &1552042870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552042865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ecb7ea8987478fb8fe114726670b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8475477206614495885, guid: 409c8d95bcdda41738762568114127d1, type: 3}
+  cross: {fileID: 6583558763234747111, guid: 46523052ee74b4f77b7e0c730caa6275, type: 3}
+  playM: {fileID: 105517780}
 --- !u!1 &1876742816
 GameObject:
   m_ObjectHideFlags: 0
