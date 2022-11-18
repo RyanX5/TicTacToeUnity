@@ -60,8 +60,17 @@ public class PlayManager : MonoBehaviour
 
         if (WinCondition(mat))
         {
-            gameWonText.GetComponent<TextMeshProUGUI>().SetText("GAME WON!");
-            gameWonText.gameObject.SetActive(true);
+            if (moveCount % 2 == 1)
+            {
+                gameWonText.GetComponent<TextMeshProUGUI>().SetText("Cross won!");
+                gameWonText.gameObject.SetActive(true);
+            }
+
+            else if (moveCount % 2 ==0)
+            {
+                gameWonText.GetComponent<TextMeshProUGUI>().SetText("Circle won!");
+                gameWonText.gameObject.SetActive(true);
+            }
         }
         else
         {
